@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ungkapan Cinta - Di Pegunungan</title>
+    <style>
+        /* Body styling */
+        @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+        body {
+            font-family: Lato;
+            margin: 0;
+            padding: 0;
+            background: url('https://cdn.pixabay.com/photo/2020/02/13/17/28/mountain-4844447_960_720.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;  
+            text-align: center;
+            position: relative;
+            animation: fadeIn 2s ease-in-out; /* Fade-in effect */
+            background: linear-gradient(90deg, black, grey);
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        /* Container for the message */
+        .container {
+            position: relative;
+            background: rgba(0, 0, 0, 0.6);
+            padding: 40px 60px;
+            border-radius: 20px;
+            box-shadow: 0 0 50px rgba(255, 255, 255, 0.3);
+            z-index: 10;
+            width: 80%;
+            max-width: 800px;
+            text-align: center;
+        }
+
+        /* Title and main message */
+        h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            color: #f01f6f; /* Gold color for warmth */
+            text-shadow: 3px 3px 15px rgba(255, 255, 255, 0.6);
+            animation: bounce 2s ease-in-out infinite; /* Bounce effect */
+        }
+
+        @keyframes bounce {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-5px); }
+            100% { transform: translateY(0); }
+        }
+
+        p {
+            font-size: 22px;
+            line-height: 1.6;
+            color: #fff;
+            max-width: 700px;
+            margin: 0 auto;
+            text-shadow: 1px 1px 6px rgba(255, 255, 255, 0.5);
+            animation: textFadeIn 3s ease-in-out; /* Fade-in text */
+        }
+
+        @keyframes textFadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        /* Button styling */
+        .btn {
+            background-color: #f02584; /* Warm gold color */
+            color: white;
+            padding: 20px 40px;
+            border: none;
+            border-radius: 40px;
+            font-size: 24px;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+            margin-top: 30px;
+            text-transform: uppercase;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+        }
+
+        .btn:hover {
+            background-color: #f0176a;
+            transform: scale(1.1) rotate(3deg);
+            box-shadow: 0 0 25px rgba(255, 255, 255, 0.7);
+        }
+
+        /* Planet styling */
+        .planet {
+            font-size: 100px;
+            color: #e92490;
+            margin-top: 30px;
+            animation: float 2s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0); }
+        }
+
+        /* Speech bubble */
+        .bubble {
+            display: inline-block;
+            position: relative;
+            background-color: #fa217b;
+            padding: 10px 20px;
+            font-size: 18px;
+            border-radius: 25px;
+            margin-top: 20px;
+            animation: bubbleEffect 1.5s ease-in-out infinite;
+        }
+
+        .bubble::after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-top: 20px solid #e9226e;
+            transform: translateX(-50%);
+        }
+
+        @keyframes bubbleEffect {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Di Pegunungan, Aku Mencintaimu!</h1>
+        <p>Seperti puncak-puncak gunung yang tinggi, cinta ini terus tumbuh dan menjulang tinggi. Di antara puncak-puncak tertinggi, aku menemukan kedamaian saat memikirkanmu.</p>
+        <p>Setiap aliran sungai yang menyejukkan hati, seperti hatiku yang tenang karena cinta ini. Kamu adalah keindahan alam yang tak ternilai bagiku.</p>
+        <div class="planet">🏞️</div>
+        <div class="bubble">Kamu adalah puncak tertinggi di hatiku! ⛰️</div>
+        <button class="btn" onclick="alert('Aku Mencintaimu, Seperti Pegunungan yang Tak Pernah Runtuh!')">Klik Aku!</button>
+    </div>
+</body>
+</html>
